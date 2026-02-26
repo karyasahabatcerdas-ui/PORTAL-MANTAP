@@ -8,12 +8,12 @@ if ('serviceWorker' in navigator) {
 
 // DAFTAR STATUS MODUL (Ubah 'active' jadi 'maintenance' untuk menonaktifkan tombol tertentu)
 const MODUL_STATUS = {
-    "admin": "maintenance",
+    "admin": "nonactive",
     "maintenance": "active", // Contoh: Modul ini sedang diperbaiki
-    "she": "maintenance",
-    "finance": "maintenance",
-    "system": "maintenance",
-    "develop": "maintenance"
+    "she": "nonactive",
+    "finance": "nonactive",
+    "system": "nonactive",
+    "develop": "nonactive"
 };
 
 
