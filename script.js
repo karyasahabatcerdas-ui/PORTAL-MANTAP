@@ -16,8 +16,6 @@ const MODUL_STATUS = {
     "develop": "maintenance"
 };
 
-// Deteksi Perangkat
-const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
 function navigasi(modulKey, targetDevice, url) {
     // 1. Cek apakah modul tersebut aktif atau maintenance
