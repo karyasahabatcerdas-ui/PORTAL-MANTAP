@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTAL-MANTAP | Hub Modul</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-theme="light">
+
+    <header>
+        <h1>PORTAL-MANTAP</h1>
+        <p>Silakan pilih modul software untuk memulai uji coba (Trial)</p>
+        
+        <div class="theme-switcher">
+            <button class="theme-btn" onclick="setTheme('light')">☀️ Light</button>
+            <button class="theme-btn" onclick="setTheme('dark')">🌙 Dark</button>
+            <button class="theme-btn" onclick="setTheme('dark-blue')">🌌 Dark Blue</button>
+        </div>
+    </header>
+
+    <main class="grid-container">
+        <div class="card" onclick="navigasi('desktop', 'https://link-modul-1.com')">
+            <span class="tag status-desktop">Desktop Only</span>
+            <h3>01. Admin Dashboard</h3>
+            <p>Manajemen data utama dan laporan finansial.</p>
+        </div>
+
+        <div class="card" onclick="navigasi('mobile', 'https://link-modul-2.com')">
+            <span class="tag status-mobile">Mobile Only</span>
+            <h3>02. Absensi GPS</h3>
+            <p>Sistem presensi kehadiran berbasis lokasi.</p>
+        </div>
+
+        <div class="card" onclick="navigasi('hybrid', 'https://link-modul-3.com')">
+            <span class="tag status-hybrid">Hybrid</span>
+            <h3>03. Stok Barang</h3>
+            <p>Input dan cek stok gudang real-time.</p>
+        </div>
+
+        <div class="card" onclick="navigasi('desktop', 'https://link-modul-4.com')">
+            <span class="tag status-desktop">Desktop Only</span>
+            <h3>04. Invoice Gen</h3>
+            <p>Cetak faktur otomatis ke klien.</p>
+        </div>
+
+        <div class="card" onclick="navigasi('mobile', 'https://link-modul-5.com')">
+            <span class="tag status-mobile">Mobile Only</span>
+            <h3>05. Messenger Bot</h3>
+            <p>Kontrol notifikasi pesan otomatis.</p>
+        </div>
+
+        <div class="card" onclick="navigasi('hybrid', 'https://link-modul-6.com')">
+            <span class="tag status-hybrid">Hybrid</span>
+            <h3>06. Support</h3>
+            <p>Portal tiket bantuan pengguna.</p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
