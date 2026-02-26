@@ -8,7 +8,7 @@ if ('serviceWorker' in navigator) {
 
 // DAFTAR STATUS MODUL (Ubah 'active' jadi 'maintenance' untuk menonaktifkan tombol tertentu)
 const MODUL_STATUS = {
-    "admin": "nonactive",
+    "admin": "active",
     "maintenance": "active", // Contoh: Modul ini sedang diperbaiki
     "she": "nonactive",
     "finance": "nonactive",
