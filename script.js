@@ -38,7 +38,8 @@ function navigasi(modulKey, targetDevice, url) {
     // 1. Cek apakah modul tersebut aktif atau maintenance
     if (MODUL_STATUS[modulKey] !== "active") {
         alert("⚠️ MODUL SEDANG MAINTENANCE\nMaaf, modul " + modulKey.toUpperCase() + " saat ini sedang tidak dapat diakses untuk sementara waktu.");
-        return; // Berhenti di sini, jangan redirect
+        window.location.href = maintenance.html; // Redirect ke halaman maintenance
+        //return; // Berhenti di sini, jangan redirect
     }
 
     // 2. Cek Kesesuaian Perangkat
