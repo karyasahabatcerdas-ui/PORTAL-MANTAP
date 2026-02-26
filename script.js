@@ -58,7 +58,7 @@ const STATUS_PORTAL = "active"; // Ganti jadi "nonactive" untuk menutup akses
 
 window.onload = () => {
     // Cek Status Portal
-    if (STATUS_PORTAL !== "nonactive") {
+    if (STATUS_PORTAL !== "active") {
         window.location.href = "maintenance.html"; // Kirim user ke halaman peringatan
         return;
     }
