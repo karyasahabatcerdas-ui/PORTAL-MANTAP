@@ -9,11 +9,20 @@
     <title>MANTAP</title>    
     <!-- Manifest agar bisa di-install & Fullscreen Native -->
     <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="style.css">
     
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
-  </head>
+    <style>
+        body, html { 
+            margin: 0; padding: 0; height: 100%; width: 100%;
+            overflow: hidden; background-color: #000; 
+        }
+        iframe { 
+            width: 100%; height: 100%; border: none; display: block;
+        }
+        #warning{
+            display : none ;
+        }
+    </style>
+</head>
 <body>
 <iframe 
   src="https://script.google.com/macros/s/AKfycbwwhJbsUm691F6FNIQ3E8jkBuEdu2xAQe1SchuFKA9JU00K3qvVRSnaEcHrcXliNK-_Ag/exec" 
@@ -22,7 +31,6 @@
   style="width:100%; height:100vh; border:none;">
 </iframe>
 
-<script src="script.js"></script>
-
+</script>
 </body>
 </html>
