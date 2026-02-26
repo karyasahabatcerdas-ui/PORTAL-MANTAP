@@ -1,4 +1,10 @@
 // 1. LOGIKA TEMA
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js')
+    .then(() => console.log("PWA Active"))
+    .catch(err => console.log("PWA Error", err));
+}
+
 function setTheme(themeName) {
     document.body.setAttribute('data-theme', themeName);
     localStorage.setItem('portal_theme', themeName);
