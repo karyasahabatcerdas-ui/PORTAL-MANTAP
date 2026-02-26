@@ -74,11 +74,11 @@ function navigasi(modulKey, targetDevice, url) {
 }
 
 // VARIABEL STATUS PORTAL
-const STATUS_PORTAL = "nonactive"; // Ganti jadi "nonactive" untuk menutup akses
+const STATUS_PORTAL = "active"; // Ganti jadi "nonactive" untuk menutup akses
 
 window.onload = () => {
     // Cek Status Portal
-    if (STATUS_PORTAL !== "active") {
+    if (STATUS_PORTAL !== "nonactive") {
         window.location.href = "maintenance.html"; // Kirim user ke halaman peringatan
         return;
     }
