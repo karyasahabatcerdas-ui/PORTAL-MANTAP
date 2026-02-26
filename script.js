@@ -16,6 +16,7 @@ const MODUL_STATUS = {
     "develop": "nonactive"
 };
 
+const STATUS_PORTAL = "active"; // Ganti jadi "nonactive" untuk menutup akses
 
 // 1. LOGIKA TEMA
 function setTheme(themeName) {
