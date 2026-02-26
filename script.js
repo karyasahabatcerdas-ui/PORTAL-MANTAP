@@ -58,10 +58,10 @@ const STATUS_PORTAL = "active"; // Ganti jadi "nonactive" untuk menutup akses
 
 window.onload = () => {
     // Cek Status Portal
-    if (STATUS_PORTAL !== "active") {
-        window.location.href = "maintenance.html"; // Kirim user ke halaman peringatan
-        return;
-    }
+   // if (STATUS_PORTAL !== "active") {
+       // window.location.href = "maintenance.html"; // Kirim user ke halaman peringatan
+       // return;
+    //}
 
     const savedTheme = localStorage.getItem('portal_theme') || 'light';
     setTheme(savedTheme);
