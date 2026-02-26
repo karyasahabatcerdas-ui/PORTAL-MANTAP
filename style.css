@@ -93,5 +93,31 @@ header {
 }
 
 .status-mobile { color: #ff7675; }
+
+/* Tambahan untuk Shading & Layout */
+.card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: var(--card-bg); /* Sedikit lebih terang dari body */
+    border: 1px solid var(--border-color);
+    padding: 15px;
+    border-radius: 16px;
+    cursor: pointer;
+    box-shadow: 8px 8px 15px rgba(0,0,0,0.1), -4px -4px 10px rgba(255,255,255,0.05); /* Efek Shading Neumorphism */
+}
+
+.thumb-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    object-fit: cover;
+    background: #eee; /* Placeholder jika gambar belum ada */
+}
+
+.card-content {
+    text-align: left;
+    flex: 1;
+}
 .status-desktop { color: #55efc4; }
 .status-hybrid { color: #a29bfe; }
