@@ -17,26 +17,6 @@ const MODUL_STATUS = {
 };
 
 
-function navigasi(modulKey, targetDevice, url) {
-    // 1. Cek apakah modul tersebut aktif atau maintenance
-    if (MODUL_STATUS[modulKey] !== "active") {
-        alert("⚠️ MODUL SEDANG MAINTENANCE\nMaaf, modul " + modulKey.toUpperCase() + " saat ini sedang tidak dapat diakses untuk sementara waktu.");
-        return; // Berhenti di sini, jangan redirect
-    }
-
-    // 2. Cek Kesesuaian Perangkat
-    if (targetDevice === 'desktop' && isMobile) {
-        alert("💻 KHUSUS DESKTOP\nModul ini hanya bisa diakses via Komputer/Laptop.");
-    } 
-    else if (targetDevice === 'mobile' && !isMobile) {
-        alert("📱 KHUSUS MOBILE\nModul ini hanya tersedia untuk perangkat Smartphone.");
-    } 
-    else {
-        // Jika status ACTIVE dan PERANGKAT COCOK, barulah pindah halaman
-        window.location.href = url;
-    }
-}
-
 // 1. LOGIKA TEMA
 function setTheme(themeName) {
     document.body.setAttribute('data-theme', themeName);
