@@ -2,10 +2,10 @@
     window.addEventListener('load', function() {
       navigator.serviceWorker.register('sw.js') // Memanggil file fisik
         .then(function(reg) {
-          console.log('MANTAP: ServiceWorker Aktif!', reg.scope);
+          console.log('MANTAP-4: ServiceWorker Aktif!', reg.scope);
         })
         .catch(function(err) {
-          console.log('MANTAP: ServiceWorker Gagal:', err);
+          console.log('MANTAP-4: ServiceWorker Gagal:', err);
         });
     });
   }
