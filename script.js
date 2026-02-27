@@ -37,7 +37,7 @@ const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/
 function navigasi(modulKey, targetDevice, url) {
     // 1. Cek apakah modul tersebut aktif atau maintenance
     if (MODUL_STATUS[modulKey] !== "active") {
-        alert("⚠️ MODUL SEDANG MAINTENANCE\nMaaf, modul " + modulKey.toUpperCase() + " saat ini sedang tidak dapat diakses untuk sementara waktu.");
+        // alert("⚠️ MODUL SEDANG MAINTENANCE\nMaaf, modul " + modulKey.toUpperCase() + " saat ini sedang tidak dapat diakses untuk sementara waktu.");
         window.location.href = "maintenance.html"; // Redirect ke halaman maintenance
         return;
         //return; // Berhenti di sini, jangan redirect
