@@ -1,8 +1,8 @@
 {
   "name": "Maintenance APP - KSC",
   "short_name": "MANTAP-KSC",
-  "start_url": "/mantap-2/index.html",
-  "scope": "/mantap-2/",
+  "start_url": "index.html",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#4285f4",
